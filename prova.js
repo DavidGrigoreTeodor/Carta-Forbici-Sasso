@@ -117,7 +117,7 @@ function tornaIndietro(){
     document.getElementById("fai").style.display = "block";
     document.getElementById("box").style.display = "block";
     document.getElementById("box2").style.display = "none"
-    document.getElementById("confrerma2").style.font = "none"
+    document.getElementById("conferma2").style.font = "none"
 
     // inline al click torna indietro
     document.getElementById("conferma").style.float = "left";
