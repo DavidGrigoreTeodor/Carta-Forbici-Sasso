@@ -139,9 +139,3 @@ function tornaIndietro(){
     document.getElementById("titolo").innerHTML = "";
 }
 
-//function per l'h3 in active
-function h3Active() {
-    document.getElementById("carta").style.backgroundColor = "greenyellow";
-    document.getElementById("sasso").style.backgroundColor = "greenyellow";
-    document.getElementById("forbici").style.backgroundColor = "greenyellow";
-}
