@@ -33,6 +33,9 @@ button{
 button:focus{
     background-color: greenyellow;
 }
+button:active{
+    background-color: greenyellow;
+}
 
 article{
     font-family: 'Shippori Antique B1', sans-serif;
@@ -46,6 +49,9 @@ h3{
     background-color: yellow;
 }
 h3:focus{
+    background-color: greenyellow;
+}
+h3:active{
     background-color: greenyellow;
 }
 
