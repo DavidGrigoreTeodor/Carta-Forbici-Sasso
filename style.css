@@ -32,7 +32,6 @@ button{
 }
 button:focus{
     background-color: greenyellow;
-    border: 5px red solid;
 }
 
 article{
@@ -48,7 +47,6 @@ h3{
 }
 h3:focus{
     background-color: greenyellow;
-    border: 5px red solid;
 }
 
 #carta{
