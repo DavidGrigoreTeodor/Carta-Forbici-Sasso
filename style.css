@@ -51,9 +51,6 @@ h3{
 h3:focus{
     background-color: greenyellow;
 }
-h3:active{
-    background-color: greenyellow;
-}
 
 #carta{
     margin-left: 5px;

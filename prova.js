@@ -35,8 +35,10 @@ function verdetto() {
 
     var sceltaComputer;
 
+    //generatore numero casuale per la risposta computer
     num = Math.round(Math.random() * 3);
 
+    //switch carta, sasso, forbici + risposta computer e utente
     switch (sceltaUtente) {
         case "carta":
             sceltaComputer = num;
@@ -134,4 +136,11 @@ function tornaIndietro(){
 
     //scomparsa dell'innerHTML (del titolo)
     document.getElementById("titolo").innerHTML = "";
+}
+
+//function per l'h3 in active
+function h3Active() {
+    document.getElementById("carta").style.backgroundColor = "greenyellow";
+    document.getElementById("sasso").style.backgroundColor = "greenyellow";
+    document.getElementById("forbici").style.backgroundColor = "greenyellow";
 }
