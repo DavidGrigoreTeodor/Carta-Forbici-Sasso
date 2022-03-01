@@ -33,9 +33,6 @@ button{
 button:focus{
     background-color: greenyellow;
 }
-button:active{
-    background-color: greenyellow;
-}
 
 article{
     font-family: 'Shippori Antique B1', sans-serif;
