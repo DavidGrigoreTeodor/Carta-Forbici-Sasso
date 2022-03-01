@@ -35,22 +35,69 @@ function verdetto() {
 
     var sceltaComputer;
 
-    //vari if per le risposte del computer
-    if(sceltaUtente == "carta"){
-        sceltaComputer = "forbici. Riprovaci!";
-    }
-    if(sceltaUtente == "forbici"){
-        sceltaComputer = "sasso. Riprovaci!";
-    }
-    if(sceltaUtente == "sasso"){
-        sceltaComputer = "carta. Riprovaci!";
-    }
-    if (sceltaUtente == undefined) {
-        sceltaUtente = "niente"
-        sceltaComputer = "niente, rifai!"
-    }
+    num = Math.round(Math.random() * 3);
+
+    switch (sceltaUtente) {
+        case "carta":
+            sceltaComputer = num;
+            if (num == 0) {
+                document.getElementById("titolo").innerHTML = "Rifai, pareggio!"
+            }
+            if (num == 1) {
+                sceltaComputer = "carta, pareggio!";
+                document.getElementById("titolo").innerHTML = nomeGiocatore+ " hai scelto "+ sceltaUtente+ " il computer " +sceltaComputer;
+            }
+            if (num == 2) {
+                sceltaComputer = "forbici, hai perso!";
+                document.getElementById("titolo").innerHTML = nomeGiocatore+ " hai scelto "+ sceltaUtente+ " il computer " +sceltaComputer;
+            }
+            if (num == 3) {
+                sceltaComputer = "sasso, hai vinto";
+                document.getElementById("titolo").innerHTML = nomeGiocatore+ " hai scelto "+ sceltaUtente+ " il computer " +sceltaComputer;
+            }
+            break;
+
+            case "sasso":
+            sceltaComputer = num;
+            if (num == 0) {
+                document.getElementById("titolo").innerHTML = "Rifai, pareggio!"
+            }
+            if (num == 1) {
+                sceltaComputer = "forbici, hai vinto!";
+                document.getElementById("titolo").innerHTML = nomeGiocatore+ " hai scelto "+ sceltaUtente+ " il computer " +sceltaComputer;
+            }
+            if (num == 2) {
+                sceltaComputer = "carta, hai perso!";
+                document.getElementById("titolo").innerHTML = nomeGiocatore+ " hai scelto "+ sceltaUtente+ " il computer " +sceltaComputer;
+            }
+            if (num == 3) {
+                sceltaComputer = "sasso, pareggio!";
+                document.getElementById("titolo").innerHTML = nomeGiocatore+ " hai scelto "+ sceltaUtente+ " il computer " +sceltaComputer;
+            }
+            break;
+        case "forbici":
+            sceltaComputer = num;
+            if (num == 0) {
+                document.getElementById("titolo").innerHTML = "Rifai, pareggio!"
+            }
+            if (num == 1) {
+                sceltaComputer = "carta, hai vinto!";
+                document.getElementById("titolo").innerHTML = nomeGiocatore+ " hai scelto "+ sceltaUtente+ " il computer " +sceltaComputer;
+            }
+            if (num == 2) {
+                sceltaComputer = "sasso, hai perso!";
+                document.getElementById("titolo").innerHTML = nomeGiocatore+ " hai scelto "+ sceltaUtente+ " il computer " +sceltaComputer;
+            }
+            if (num == 3) {
+                sceltaComputer = "forbici, pareggio!";
+                document.getElementById("titolo").innerHTML = nomeGiocatore+ " hai scelto "+ sceltaUtente+ " il computer " +sceltaComputer;
+            }
+        break;
+        case undefined:
+            document.getElementById("titolo").innerHTML = "Non hai scelto niente, rifai!"
+            break;
+}
     
-    document.getElementById("titolo").innerHTML = nomeGiocatore+ " hai perso, tu hai scelto " + sceltaUtente + " il computer ha scelto " + sceltaComputer;
 }
 
 function tornaIndietro(){
