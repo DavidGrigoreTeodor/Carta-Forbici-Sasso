@@ -1,0 +1,93 @@
+#carta{
+    padding: 15px;
+    height: 40px;
+    width: 100px;
+    border: 1px solid;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#forbici{
+    padding: 15px;
+    height: 40px;
+    width: 120px;
+    border: 1px solid;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#sasso{
+    padding: 15px;
+    height: 40px;
+    width: 100px;
+    border: 1px solid;
+    border-radius: 10px;
+    cursor: pointer;
+}
+button{
+    border-radius: 10px;
+    padding: 13px;
+    background-color: yellow;
+    margin-right: 20px;
+    margin-left: 80px;
+    cursor: pointer;
+}
+
+article{
+    font-family: 'Shippori Antique B1', sans-serif;
+    margin-left: 30px;
+}
+
+h3{
+    margin-right: 30px;
+    margin-left: 30px;
+    float: left;
+    background-color: yellow;
+}
+
+#carta{
+    margin-left: 5px;
+}
+
+body{
+    background-color: black;
+}
+
+#box{
+    border: 5px black solid;
+    border-radius: 30px;
+    width: 700px;
+    height: 300px;
+    margin-bottom: 5px;
+    padding: 20px;
+    background: rgb(39,69,223);
+    background: radial-gradient(circle, rgba(39,69,223,1) 35%, rgba(45,136,231,1) 100%);
+}
+
+#box2{
+    border: 5px black solid;
+    border-radius: 30px;
+    width: 700px;
+    height: 300px;
+    margin-bottom: 5px;
+    padding: 20px;
+    background: rgb(39,69,223);
+    background: radial-gradient(circle, rgba(39,69,223,1) 35%, rgba(45,136,231,1) 100%);
+    display: none;
+}
+
+#fai{
+    border: 2px solid;
+    border-radius: 10px;
+    width: 250px;
+    padding: 20px;
+    font-size: 35px;
+    background-color: yellow;
+}
+
+#titolo{
+    border: 2px solid;
+    border-radius: 10px;
+    width: 550px;
+    padding: 20px;
+    font-size: 35px;
+    background-color: yellow;
+}
