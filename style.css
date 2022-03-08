@@ -56,7 +56,7 @@ body{
     border: 5px black solid;
     border-radius: 30px;
     width: 700px;
-    height: 420px;
+    height: 300px;
     margin-bottom: 5px;
     padding: 20px;
     background: rgb(39,69,223);
@@ -91,13 +91,12 @@ body{
     padding: 20px;
     font-size: 35px;
     background-color: yellow;
-    float: left;
 }
 
 img{
     border: 12px whitesmoke solid;
     border-radius: 20px;
-    margin-top: -40px;
+    margin-top: 20px;
 }
 
 #h123{

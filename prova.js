@@ -31,7 +31,6 @@ function verdetto() {
     document.getElementById("fai").style.display = "none";
     document.getElementById("box").style.display = "none";
     document.getElementById("box2").style.display = "block"
-    document.getElementById("titsu").innerHTML = "Hai perso";
 
     var sceltaComputer;
 
@@ -44,17 +43,21 @@ function verdetto() {
             sceltaComputer = num;
             if (num == 0) {
                 document.getElementById("titolo").innerHTML = "Rifai, pareggio!"
+                document.getElementById("titsu").innerHTML = "Hai pareggiato";
             }
             if (num == 1) {
                 sceltaComputer = "carta, pareggio!";
                 document.getElementById("titolo").innerHTML = nomeGiocatore+ " hai scelto "+ sceltaUtente+ " il computer " +sceltaComputer;
+                document.getElementById("titsu").innerHTML = "Hai pareggiato";
             }
             if (num == 2) {
                 sceltaComputer = "forbici, hai perso!";
+                document.getElementById("titsu").innerHTML = "Hai perso";
                 document.getElementById("titolo").innerHTML = nomeGiocatore+ " hai scelto "+ sceltaUtente+ " il computer " +sceltaComputer;
             }
             if (num == 3) {
                 sceltaComputer = "sasso, hai vinto";
+                document.getElementById("titsu").innerHTML = "Hai vinto";
                 document.getElementById("titolo").innerHTML = nomeGiocatore+ " hai scelto "+ sceltaUtente+ " il computer " +sceltaComputer;
             }
             break;
@@ -63,35 +66,43 @@ function verdetto() {
             sceltaComputer = num;
             if (num == 0) {
                 document.getElementById("titolo").innerHTML = "Rifai, pareggio!"
+                document.getElementById("titsu").innerHTML = "Hai pareggiato";
             }
             if (num == 1) {
                 sceltaComputer = "forbici, hai vinto!";
+                document.getElementById("titsu").innerHTML = "Hai vinto";
                 document.getElementById("titolo").innerHTML = nomeGiocatore+ " hai scelto "+ sceltaUtente+ " il computer " +sceltaComputer;
             }
             if (num == 2) {
                 sceltaComputer = "carta, hai perso!";
+                document.getElementById("titsu").innerHTML = "Hai perso";
                 document.getElementById("titolo").innerHTML = nomeGiocatore+ " hai scelto "+ sceltaUtente+ " il computer " +sceltaComputer;
             }
             if (num == 3) {
                 sceltaComputer = "sasso, pareggio!";
                 document.getElementById("titolo").innerHTML = nomeGiocatore+ " hai scelto "+ sceltaUtente+ " il computer " +sceltaComputer;
+                document.getElementById("titsu").innerHTML = "Hai pareggiato";
             }
             break;
         case "forbici":
             sceltaComputer = num;
             if (num == 0) {
+                document.getElementById("titsu").innerHTML = "Hai pareggiato";
                 document.getElementById("titolo").innerHTML = "Rifai, pareggio!"
             }
             if (num == 1) {
                 sceltaComputer = "carta, hai vinto!";
+                document.getElementById("titsu").innerHTML = "Hai vinto";
                 document.getElementById("titolo").innerHTML = nomeGiocatore+ " hai scelto "+ sceltaUtente+ " il computer " +sceltaComputer;
             }
             if (num == 2) {
                 sceltaComputer = "sasso, hai perso!";
+                document.getElementById("titsu").innerHTML = "Hai perso";
                 document.getElementById("titolo").innerHTML = nomeGiocatore+ " hai scelto "+ sceltaUtente+ " il computer " +sceltaComputer;
             }
             if (num == 3) {
                 sceltaComputer = "forbici, pareggio!";
+                document.getElementById("titsu").innerHTML = "Hai pareggiato";
                 document.getElementById("titolo").innerHTML = nomeGiocatore+ " hai scelto "+ sceltaUtente+ " il computer " +sceltaComputer;
             }
         break;
