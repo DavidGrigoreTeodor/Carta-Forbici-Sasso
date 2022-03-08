@@ -57,7 +57,7 @@ body{
     border-radius: 30px;
     width: 700px;
     height: 300px;
-    margin-bottom: 5px;
+    margin-bottom: 0px;
     padding: 20px;
     background: rgb(39,69,223);
     background: radial-gradient(circle, rgba(39,69,223,1) 35%, rgba(45,136,231,1) 100%);
@@ -91,16 +91,4 @@ body{
     padding: 20px;
     font-size: 35px;
     background-color: yellow;
-}
-
-img{
-    border: 12px whitesmoke solid;
-    border-radius: 20px;
-    margin-top: 20px;
-}
-
-#h123{
-    color: whitesmoke;
-    font-size: 40px;
-    margin-top: 10px;
 }
